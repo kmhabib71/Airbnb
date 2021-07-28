@@ -11,14 +11,11 @@ import type {Node} from 'react';
 import {SafeAreaView, StatusBar, View} from 'react-native';
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
+import feed from './assets/data/feed';
+const post1 = feed[0];
+const post2 = feed[2];
 
 const App: () => Node = () => {
-  // const isDarkMode = useColorScheme() === 'dark';
-
-  // const backgroundStyle = {
-  //   backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  // };
-
   return (
     <>
       <View style={{backgroundColor: 'white', height: '100%'}}>
@@ -26,7 +23,7 @@ const App: () => Node = () => {
 
         <SafeAreaView style={{backgroundColor: 'white'}}>
           {/* <HomeScreen /> */}
-          <Post />
+          <Post post={post2} />
         </SafeAreaView>
       </View>
     </>
