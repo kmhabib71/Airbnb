@@ -1,0 +1,29 @@
+1. npx react-native init Airbnb
+2. yarn add react-native-vector-icons
+3. For fonts in IOS: Copy and past in
+    ios->airbnb->infolist
+                    <key>UIAppFonts</key>
+            <array>
+            <string>AntDesign.ttf</string>
+            <string>Entypo.ttf</string>
+            <string>EvilIcons.ttf</string>
+            <string>Feather.ttf</string>
+            <string>FontAwesome.ttf</string>
+            <string>FontAwesome5_Brands.ttf</string>
+            <string>FontAwesome5_Regular.ttf</string>
+            <string>FontAwesome5_Solid.ttf</string>
+            <string>Foundation.ttf</string>
+            <string>Ionicons.ttf</string>
+            <string>MaterialIcons.ttf</string>
+            <string>MaterialCommunityIcons.ttf</string>
+            <string>SimpleLineIcons.ttf</string>
+            <string>Octicons.ttf</string>
+            <string>Zocial.ttf</string>
+            <string>Fontisto.ttf</string>
+            </array>
+
+5. For font in android, go to android->app->build
+    gradle and past the line:
+    apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+6. For IOS - npm pod-install ios
