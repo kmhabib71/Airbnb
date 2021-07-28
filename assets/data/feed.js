@@ -46,7 +46,7 @@ export default [
   },
   {
     id: '3',
-    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/4.jpg',
+    image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg',
     type: 'Entire Flat',
     title: 'Typical canarian house',
     bed: 4,

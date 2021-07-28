@@ -27,3 +27,18 @@
     apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 6. For IOS - npm pod-install ios
+
+
+
+
+import React from 'react';
+import {View, Text} from 'react-native';
+
+const SearchResultPage = props => {
+  return (
+    <View>
+      <Text>Hello</Text>
+    </View>
+  );
+};
+export default SearchResultPage;
