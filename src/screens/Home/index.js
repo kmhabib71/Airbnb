@@ -9,7 +9,7 @@ const HomeScreen = props => {
       <View>
         <Pressable
           style={styles.searchButton}
-          onPress={() => console.warn('data', 'Search Btn Clicked')}>
+          onPress={() => console.warn('Search Btn Clicked')}>
           <Fontisto name="search" size={25} color={'#fa5454'} />
           <Text style={styles.SearchButtonText}>Where are you going?</Text>
         </Pressable>
@@ -19,7 +19,7 @@ const HomeScreen = props => {
           <Text style={styles.title}>Go Near</Text>
           <Pressable
             style={styles.button}
-            onPress={() => console.warn('data', 'Explore Btn Clicked')}>
+            onPress={() => console.warn('Explore Btn Clicked')}>
             <Text style={styles.buttonText}>Explore nearby stays</Text>
           </Pressable>
         </ImageBackground>

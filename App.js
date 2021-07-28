@@ -10,6 +10,8 @@ import React from 'react';
 import type {Node} from 'react';
 import {SafeAreaView, StatusBar, View} from 'react-native';
 import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
+
 const App: () => Node = () => {
   // const isDarkMode = useColorScheme() === 'dark';
 
@@ -19,11 +21,14 @@ const App: () => Node = () => {
 
   return (
     <>
-      <StatusBar backgroundColor="white" barStyle="dark-content" />
+      <View style={{backgroundColor: 'white', height: '100%'}}>
+        <StatusBar backgroundColor="white" barStyle="dark-content" />
 
-      <SafeAreaView style={{backgroundColor: 'white'}}>
-        <HomeScreen />
-      </SafeAreaView>
+        <SafeAreaView style={{backgroundColor: 'white'}}>
+          {/* <HomeScreen /> */}
+          <Post />
+        </SafeAreaView>
+      </View>
     </>
   );
 };
