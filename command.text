@@ -28,7 +28,16 @@
 
 6. For IOS - npm pod-install ios
 
-
+7. For nevigation install the follwing library
+    //Install React-Navigation Library:
+    $ npm install @react-navigation/native @react-navigation/bottom-tabs @react-navigation/stack
+    //Installing Dependecies
+    $ yarn add react-native-reanimated react-native-gesturehandler react-native-screens react-native-safe-area-context
+    @react-native-community/masked-view
+    //Install the pods (for Mac and IOS only)
+    $ npx pod-install ios
+    //Import Gesture handler
+    Import ‘react-native-gesture-handler’   
 
 
 import React from 'react';
