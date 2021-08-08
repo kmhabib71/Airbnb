@@ -2,6 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from '../screens/Home';
 import SearchResultScreen from '../screens/searchResults';
+import SearchResultsTabNavigator from './SearchResultsTabNavigator';
 
 const Stack = createStackNavigator();
 
@@ -15,7 +16,7 @@ const Router = props => {
       />
       <Stack.Screen
         name={'SearchResults'}
-        component={SearchResultScreen}
+        component={SearchResultsTabNavigator}
         options={{title: 'Search your destination'}}
       />
     </Stack.Navigator>
