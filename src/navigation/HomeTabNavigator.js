@@ -9,6 +9,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import SearchResultMaps from '../screens/SearchResultsMap';
+import postScreen from '../screens/postScreen';
 const Tab = createBottomTabNavigator();
 const HomeTabNavigator = props => {
   return (
@@ -18,8 +19,7 @@ const HomeTabNavigator = props => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        // component={ExploreNavigator}
-        component={SearchResultMaps}
+        component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}) => (
             <Fontisto name="search" size={25} color={color} />

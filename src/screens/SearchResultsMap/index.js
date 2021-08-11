@@ -47,7 +47,7 @@ const SearchResultMaps = props => {
           <CustomMarker
             coordinate={place.coordinate}
             price={place.newPrice}
-            marketid={place.id}
+            key={place.id}
             isSelected={place.id === selectedPlaceId}
             onPress={() => setSelectedPlaceId(place.id)}
           />
